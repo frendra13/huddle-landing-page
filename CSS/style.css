@@ -1,0 +1,303 @@
+@font-face {
+    font-family: 'poppins';
+    src: url("/font/Poppins-Medium.ttf");
+}
+
+@font-face {
+    font-family: 'Opensans';
+    src: url("/font/OpenSans-Regular.ttf");
+}
+
+body {
+    background-color: #222;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.back {
+    min-height: 80vh;
+    max-width: 1440px;
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(/images/bg-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.logo {
+    margin-top: 5vh;
+    margin-left: 3vw;
+}
+
+.logo img {
+    max-width: 225px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.hero {
+    margin-top: 5vh;
+    margin-left: 3vw;
+}
+
+.desc h1 {
+    color: whitesmoke;
+    font-family: "poppins";
+    font-weight: 600;
+    font-size: 2.5rem;
+    padding-top: 5vh;
+    margin-left: 3vw;
+}
+
+.desc p {
+    color: whitesmoke;
+    font-family: "Opensans";
+    font-weight: 400;
+    font-size: 1.1rem;
+    margin-top: 3vh;
+    margin-left: 3vw;
+    margin-right: 5vw;
+}
+
+.desc button {
+    width: 12rem;
+    height: 3.5rem;
+    margin-top: 1vh;
+    margin-left: 3vw;
+    margin-right: 5vw;
+    cursor: pointer;
+    border-radius: 2rem;
+    border: none;
+    font-family: "Opensans";
+    font-size: 1.1rem;
+    color: hsl(257, 40%, 49%);
+    filter: drop-shadow(0 1px 0.3rem rgba(0, 0, 0, 0.5));
+}
+
+.desc button:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: whitesmoke
+}
+
+.socmed {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 5rem;
+
+}
+
+.github,
+.linkedin,
+.instagram {
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 1px solid whitesmoke;
+    border-radius: 50%;
+    margin: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.github:hover,
+.linkedin:hover,
+.instagram:hover {
+    border: 1px solid hsl(300, 69%, 71%);
+}
+
+.github:hover>a .fab,
+.linkedin:hover>a .fab,
+.instagram:hover>a .fab {
+    color: hsl(300, 69%, 71%);
+}
+
+.fab {
+    transform: scale(1.5);
+    color: whitesmoke;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+    font-size: 11px;
+    text-align: center;
+    color: black;
+    width: 100%;
+}
+
+.attribution a {
+    color: hsl(300, 69%, 71%);
+    ;
+}
+
+/** media  width 1080 */
+
+@media screen and (max-width: 1079px) {
+
+    body {
+        max-width: 100%;
+        position: relative;
+        padding: 0;
+        margin: 0;
+    }
+
+    .back {
+        min-height: 110vh;
+    }
+
+    .logo img {
+        max-width: 25vw;
+    }
+
+    .hero {
+        max-width: 100vw;
+        margin: 2vw 0 0 0;
+    }
+
+    .hero img {
+        max-width: 90vw;
+    }
+
+    .content {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .desc {
+        margin: 0 3vw 0 3vw;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .desc h1 {
+        font-size: 5vw;
+        text-align: center;
+    }
+
+    .desc p {
+        font-size: 2vw;
+        text-align: center;
+        margin: 0 20% 0 20%;
+    }
+
+    .desc button {
+        width: 25vw;
+        height: 10vw;
+        height: 3.5rem;
+        margin-top: 4rem;
+    }
+
+    .socmed {
+        margin-right: 5vw;
+        position: absolute;
+        right: 0;
+        bottom: 5%;
+    }
+
+    .desc button {
+        width: 12rem;
+        height: 3.5rem;
+        margin: 2rem;
+    }
+
+    .socmed {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .attribution {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+    body {
+        background-image: url(/images/bg-desktop.svg);
+        background-repeat: no-repeat;
+        position: relative;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .back {
+        min-height: 120vh;
+
+    }
+
+    .logo {
+        margin-top: 5vh;
+        margin-left: 7vw;
+
+    }
+
+    .logo img {
+        max-width: 30vw;
+    }
+
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .hero {
+        max-width: 90vw;
+        margin-left: 0;
+    }
+
+    .hero img {
+        max-width: 100%;
+    }
+
+    .desc {
+        margin: 0 3vw 0 3vw;
+        padding: 0;
+    }
+
+    .desc h1 {
+        font-size: 7vw;
+        font-weight: 500;
+    }
+
+    .desc p {
+        margin: 0 2rem 0 2rem;
+        font-size: 4vw;
+        text-align: center;
+    }
+
+    .desc button {
+        width: 12rem;
+        height: 3.5rem;
+        margin: 2rem;
+    }
+}
